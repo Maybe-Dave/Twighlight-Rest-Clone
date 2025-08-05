@@ -1,0 +1,24 @@
+{
+  "name": "twilight-rest-clone",
+  "version": "1.0.0",
+  "description": "A meditation and mindfulness web application",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i styles.css -o main.css --minify",
+    "dev": "tailwindcss -i styles.css -o main.css --watch",
+    "start": "serve ."
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "serve": "^14.2.4",
+    "tailwindcss": "^4.1.11"
+  },
+  "keywords": [
+    "meditation",
+    "mindfulness",
+    "tailwindcss"
+  ],
+  "author": "David Dickson",
+  "license": "Daved Dickson's License",
+  "homepage": "https://github.com/Maybe-Dave/twilight-rest-clone"
+}
