@@ -29,6 +29,7 @@
         background-color: #f6f3f3;
         font-family: "Inter", sans-serif;
         transition: all 200ms ease;
+        scroll-behavior: smooth;
     }
 </style>
 
@@ -44,7 +45,7 @@
 
             <!-- Desktop Navigation -->
             <ul class="hidden md:flex list-none flex-row gap-6 transition-all duration-200 ease">
-                <li><a class=" hover:underline-offset-6 hover:underline hover:text-orange-900" href="#">Home</a></li>
+                <li><a class=" hover:underline-offset-6 hover:underline hover:text-orange-900" href="#hero">Home</a></li>
                 <li><a class=" hover:underline-offset-6 hover:underline hover:text-orange-900" href="#">Sessions</a>
                 </li>
                 <li><a class=" hover:underline hover:underline-offset-6 hover:text-orange-900" href="#">Sleep</a></li>
@@ -52,9 +53,9 @@
                 </li>
                 <li><a class=" hover:underline hover:underline-offset-6 hover:text-orange-900" href="#">Learn</a></li>
                 <li><a class=" hover:underline hover:underline-offset-6 hover:text-orange-900" href="#">Quote</a></li>
-                <li><a class=" hover:underline hover:underline-offset-6 hover:text-orange-900" href="#">About Us</a>
+                <li><a class=" hover:underline hover:underline-offset-6 hover:text-orange-900" href="#about">About Us</a>
                 </li>
-                <li><a class=" hover:underline hover:underline-offset-6 hover:text-orange-900" href="#">Blog</a></li>
+                <li><a class=" hover:underline hover:underline-offset-6 hover:text-orange-900" href="#testimonials">Blog</a></li>
             </ul>
 
             <!-- Desktop Buttons -->
@@ -88,9 +89,10 @@
                     </svg>
                 </a>
             </li>
-            <li><a href="#" class="">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#hero" class="">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#testimonials">Blog</a></li>
             <li><a href="#">Sign In</a></li>
             <li><a href="#">Get Started</a></li>
         </ul>
@@ -98,8 +100,8 @@
 
 
     </header>
-    <main class="flex flex-col items-center justify-center overflow-x-hidden">
-        <section
+    <main class="flex flex-col items-center justify-center overflow-x-hidden w-full">
+        <section id="hero"
             class="hero-section px-6 pb-12 mt-10 text-center md:text-left md:flex md:px-16 max-w-[1500px] mx-auto md:justify-between w-full">
 
             <div class="md:mt-28">
@@ -157,8 +159,7 @@
                     src="https://res.cloudinary.com/dhnfwdnws/image/upload/v1754395602/image_icwrct.png" alt=""
                     class="w-fit"></div>
         </section>
-        <section class="how-section py-20 md:py-50 w-full overflow-x-hidden"
-            style="background-color: #eeeaea; font-family: 'inter';">
+        <section id="about" class="how-section py-20 md:py-50 w-full overflow-x-hidden bg-[#eeeaea] font-['inter']">
             <div class="max-w-[1500px] mx-auto flex flex-col items-center justify-center px-6 md:px-12">
                 <h2 class="text-4xl font-semibold w-4/7 text-center mb-6">How Twilight Rest Helps You Feel
                     Better</h2>
@@ -166,30 +167,29 @@
                     anytime, anywhere.</p>
                 <div
                     class="flex flex-col md:flex-row md:justify-between gap-14 md:gap-16 items-center justify-center px-6">
-                    <div class="rounded-xl w-full max-w-sm h-auto p-6 flex flex-col items-center justify-start border-b-8 border-orange-900 rounded-b-4xl hover:scale-105 transition-transform duration-300"
-                        style="background-color: #f6f3f3;">
-                        <span class="flex items-center justify-center w-14 h-14 rounded-full  mb-6 shadow-md/20"
-                            style="background-color: #eeeaea;">
-                            <!-- Place your icon here, e.g. -->
+                    <div
+                        class="bg-[#f6f3f3] rounded-xl w-full max-w-sm h-auto p-6 flex flex-col items-center justify-start border-b-8 border-orange-900 rounded-b-4xl hover:scale-105 transition-transform duration-300">
+                        <span
+                            class="bg-[#eeeaea] flex items-center justify-center w-14 h-14 rounded-full  mb-6 shadow-md/20">
                             <ion-icon name="heart-outline" class="text-orange-900 text-2xl"></ion-icon>
                         </span>
                         <h3 class="text-lg font-semibold text-orange-900 mb-4">Choose Your Focus</h3>
                         <p class="text-center text-gray-600">Select from stress, sleep, focus, or happiness</p>
                     </div>
-                    <div class="rounded-xl w-full max-w-sm h-auto p-6 flex flex-col items-center justify-start border-b-8 border-orange-900 rounded-b-4xl hover:scale-105 transition-transform duration-300"
-                        style="background-color: #f6f3f3;">
-                        <span class="flex items-center justify-center w-14 h-14 rounded-full  mb-6 shadow-md/20"
-                            style="background-color: #eeeaea;">
+                    <div
+                        class="bg-[#f6f3f3] rounded-xl w-full max-w-sm h-auto p-6 flex flex-col items-center justify-start border-b-8 border-orange-900 rounded-b-4xl hover:scale-105 transition-transform duration-300">
+                        <span
+                            class="bg-[#eeeaea] flex items-center justify-center w-14 h-14 rounded-full  mb-6 shadow-md/20">
                             <ion-icon name="play-outline" class="text-orange-900 text-2xl"></ion-icon>
                         </span>
                         <h3 class="text-lg font-semibold text-orange-900 mb-4">Start a Guided Session</h3>
                         <p class="text-center text-gray-600">Listen to calming voice-led meditations tailored to your
                             goals.</p>
                     </div>
-                    <div class="rounded-xl w-full max-w-sm h-auto p-6 flex flex-col items-center justify-start border-b-8 border-orange-900 rounded-b-4xl hover:scale-105 transition-transform duration-300"
-                        style="background-color: #f6f3f3;">
-                        <span class="flex items-center justify-center w-14 h-14 rounded-full  mb-6 shadow-md/20"
-                            style="background-color: #eeeaea;">
+                    <div
+                        class="bg-[#f6f3f3] rounded-xl w-full max-w-sm h-auto p-6 flex flex-col items-center justify-start border-b-8 border-orange-900 rounded-b-4xl hover:scale-105 transition-transform duration-300">
+                        <span
+                            class="bg-[#eeeaea] flex items-center justify-center w-14 h-14 rounded-full  mb-6 shadow-md/20">
                             <ion-icon name="analytics-outline" class="text-orange-900 text-2xl"></ion-icon>
                         </span>
                         <h3 class="text-lg font-semibold text-orange-900 mb-4">Feel the Shift</h3>
@@ -200,67 +200,63 @@
 
             </div>
         </section>
-        <section class="why-choose py-20">
+        <section id="why" class="why-choose py-20">
             <div class="max-w-[1500px] mx-auto flex flex-col items-center justify-center px-6 md:px-12">
-                <h2 class="text-4xl font-semibold max-w-4xl mx-auto text-center mb-6">Why Choose Twilight Rest?</h2>
+                <h2 class=" text-4xl font-semibold max-w-4xl mx-auto text-center mb-6">Why Choose Twilight Rest?</h2>
                 <p class="text-center text-gray-600 mb-20 max-w-2xl mx-auto">Designed to support your emotional
                     well-being with
                     science-backed methods and soothing experiences</p>
 
                 <div class="grid grid-cols-1 gap-20 md:grid-cols-2 md:gap-15 items-start justify-center">
-                    <div class="w-[500px] rounded-xl shadow-md p-5" style="background-color: #eeeaea;">
+                    <div class="max-w-[500px] rounded-xl shadow-md p-5 bg-[#eeeaea]">
                         <div class="flex items-center gap-5 mb-5">
-                            <span class="flex items-center justify-center w-12 h-12 rounded-full  "
-                                style="background-color: #f6f3f3;">
+                            <span class="bg-[#f6f3f3] flex items-center justify-center w-12 h-12 rounded-full  ">
                                 <ion-icon name="radio-outline" class="text-orange-900"
                                     style="font-size: 20px;"></ion-icon>
                             </span>
-                            <h3 class="font-semibold text-2xl">Science Based Audio</h3>
+                            <h3 class="font-semibold text-xl md:text-2xl">Science Based Audio</h3>
                         </div>
-                        <p class="p-3 border-l-12 rounded-xl border-orange-900" style="background-color: #f6f3f3;">
+                        <p class="p-3 border-l-12 rounded-xl border-orange-900 bg-[#f6f3f3]">
                             Research backed technologies proven to reduce stress and improve well-being.</p>
                     </div>
-                    <div class="w-[500px] rounded-xl shadow-md p-5" style="background-color: #eeeaea;">
+                    <div class="max-w-[500px] rounded-xl shadow-md p-5 bg-[#eeeaea]">
                         <div class="flex items-center gap-5 mb-5">
-                            <span class="flex items-center justify-center w-12 h-12 rounded-full  "
-                                style="background-color: #f6f3f3;">
+                            <span class="bg-[#f6f3f3] flex items-center justify-center w-12 h-12 rounded-full  ">
                                 <ion-icon name="moon-outline" class="text-orange-900"
                                     style="font-size: 20px;"></ion-icon>
                             </span>
-                            <h3 class="font-semibold text-2xl">Better sleep in 7 days</h3>
+                            <h3 class="font-semibold text-xl     md:text-2xl">Better sleep in 7 days</h3>
                         </div>
-                        <p class="p-3 border-l-12 rounded-xl border-orange-900" style="background-color: #f6f3f3;">Fall
+                        <p class="p-3 border-l-12 rounded-xl border-orange-900 bg-[#f6f3f3]">Fall
                             asleep faster and wake up refreshed with our sleep focused programs</p>
                     </div>
-                    <div class="w-[500px] rounded-xl shadow-md p-5" style="background-color: #eeeaea;">
+                    <div class="max-w-[500px] rounded-xl shadow-md p-5 bg-[#eeeaea]">
                         <div class="flex items-center gap-5 mb-5">
-                            <span class="flex items-center justify-center w-12 h-12 rounded-full  "
-                                style="background-color: #f6f3f3;">
+                            <span class="bg-[#f6f3f3] flex items-center justify-center w-12 h-12 rounded-full  ">
                                 <ion-icon name="phone-portrait-outline" class="text-orange-900"
                                     style="font-size: 20px;"></ion-icon>
                             </span>
-                            <h3 class="font-semibold text-2xl">Distraction Free</h3>
+                            <h3 class="font-semibold text-xl md:text-2xl">Distraction Free</h3>
                         </div>
-                        <p class="p-3 border-l-12 rounded-xl border-orange-900" style="background-color: #f6f3f3;">
+                        <p class="p-3 border-l-12 rounded-xl border-orange-900 bg-[#f6f3f3]">
                             Minimal interface designed to help you focus on what matters most.</p>
                     </div>
-                    <div class="w-[500px] rounded-xl shadow-md p-5" style="background-color: #eeeaea;">
+                    <div class="max-w-[500px] rounded-xl shadow-md p-5 bg-[#eeeaea]">
                         <div class="flex items-center gap-5 mb-5">
-                            <span class="flex items-center justify-center w-12 h-12 rounded-full  "
-                                style="background-color: #f6f3f3;">
+                            <span class="bg-[#f6f3f3] flex items-center justify-center w-12 h-12 rounded-full  ">
                                 <ion-icon name="bulb-outline" class="text-orange-900"
                                     style="font-size: 20px;"></ion-icon>
                             </span>
-                            <h3 class="font-semibold text-2xl">Proven Cognitive Techniques</h3>
+                            <h3 class="font-semibold text-xl md:text-2xl">Proven Cognitive Techniques</h3>
                         </div>
-                        <p class="p-3 border-l-12 rounded-xl border-orange-900" style="background-color: #f6f3f3;">
+                        <p class="p-3 border-l-12 rounded-xl border-orange-900 bg-[#f6f3f3]">
                             Evidence-based methods from mindfulness and cognitive behavioral therapy</p>
                     </div>
                 </div>
 
             </div>
         </section>
-        <section class="more-than py-20 w-full overflow-x-hidden " style="background-color: #eeeaea;">
+        <section class="more-than py-20 w-full overflow-x-hidden bg-[#eeeaea]">
             <div class="max-w-[1500px] mx-auto px-6 md:px-12 md:flex md:justify-between md:items-center gap-6">
                 <div
                     class="flex flex-col items-center justify-center md:items-start md:justify-start text-center md:text-left">
@@ -269,22 +265,22 @@
                         from
                         within</p>
                     <ul class="mt-14 ">
-                        <li class="flex items-center gap-4 mb-4">
+                        <li class="flex items-center gap-2 md:gap-4 mb-4">
                             <span class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-900"><ion-icon
                                     class="text-white " name="book-outline"></ion-icon></span>
                             <p>Track your mood with journaling</p>
                         </li>
-                        <li class="flex items-center gap-4 mb-4">
+                        <li class="flex items-center gap-2 md:gap-4 mb-4">
                             <span class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-900"><ion-icon
                                     class="text-white " name="calendar-outline"></ion-icon></span>
                             <p>Create your meditation schedule</p>
                         </li>
-                        <li class="flex items-center gap-4 mb-4">
+                        <li class="flex items-center gap-2 md:gap-4 mb-4">
                             <span class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-900"><ion-icon
                                     class="text-white " name="alarm-outline"></ion-icon></span>
-                            <p>Set personalized goals for your meditation practice.</p>
+                            <p class="text-left">Set personalized goals.</p>
                         </li>
-                        <li class="flex items-center gap-4 mb-4">
+                        <li class="flex items-center gap-2 md:gap-4 mb-4">
                             <span class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-900"><ion-icon
                                     class="text-white " name="star-outline"></ion-icon></span>
                             <p>Get reminders for mindfulness breaks</p>
@@ -296,15 +292,96 @@
                         alt=""></div>
             </div>
         </section>
-        <section class="flexible-plans  py-20 w-full" style="background-color: #eeeaea;">
+        <section id="testimonials" class="py-20">
+            <div class="w-full py-20">
+                <div class="max-w-[1100px] mx-auto px-6 flex flex-col items-center">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-center mb-2">Loved by Mindful People Around the
+                        World</h2>
+                    <p class="text-gray-500 text-center mb-12">Real stories from people who found peace and progress
+                        with Twilight Rest.</p>
+                    <div class="flex flex-col md:flex-row gap-8 w-full justify-center items-stretch">
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="flex-1 bg-[#f6f3f3] rounded-4xl shadow-xl p-7  border-b-20 border-b-orange-900 flex flex-col justify-between min-w-[280px] max-w-[350px] mx-auto md:mx-0 mb-6 md:mb-0 hover:border-3 hover:border-orange-900 transition-all duration-300">
+                            <div class="">
+                                <div class="flex items-center  justify-between mb-2">
+                                    <i class="fa-solid fa-quote-left text-zinc-500"></i>
+                                    <span class="text-orange-400 text-lg mr-1">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </span>
+                                </div>
+                                <h3 class="font-bold text-base mb-6 px-2">It’s become my favorite part of the day.</h3>
+                                <p class="text-gray-500 italic text-sm px-2">Every night before sleep, I plug in and let Twilight Rest guide me to calm. It’s helped me manage anxiety in a way nothing else has.</p>
+                            </div>
+                            <div class="flex items-center justify-end gap-2 mt-4">
+                                <span class="font-bold text-gray-700">- Priya S. , India</span>
+                                <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="India"
+                                    class="w-8 h-8 rounded-full border border-orange-900 border-2 object-cover">
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="flex-1 bg-[#f6f3f3] rounded-4xl shadow-xl p-7  border-b-20 border-b-orange-900 flex flex-col justify-between min-w-[280px] max-w-[350px] mx-auto md:mx-0 mb-6 md:mb-0 hover:border-3 hover:border-orange-900 transition-all duration-300">
+                            <div class="">
+                                <div class="flex items-center  justify-between mb-2">
+                                    <i class="fa-solid fa-quote-left text-zinc-500 "></i>
+                                    <span class="text-orange-400 text-lg mr-1">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </span>
+                                </div>
+                                <h3 class="font-bold text-base mb-6 px-2">From overwhelmed to at peace.</h3>
+                                <p class="text-gray-500 italic text-sm px-2">I used to overthink everything. The daily sessions gave me structure and the sleep music really helps.</p>
+                            </div>
+                            <div class="flex items-center justify-end gap-2 mt-4">
+                                <span class="font-bold text-gray-700">- Liam J. , Canada</span>
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Canada"
+                                    class="w-8 h-8 rounded-full border border-orange-900 border-2 object-cover">
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div
+                            class="flex-1 bg-[#f6f3f3] rounded-4xl shadow-xl p-7  border-b-20 border-b-orange-900 flex flex-col justify-between min-w-[280px] max-w-[350px] mx-auto md:mx-0 hover:border-3 hover:border-orange-900 transition-all duration-300">
+                            <div class="">
+                                <div class="flex items-center  justify-between mb-2">
+                                    <i class="fa-solid fa-quote-left text-zinc-500"></i>
+                                    <span class="text-orange-400 text-lg mr-1">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </span>
+                                </div>
+                                <h3 class="font-bold text-base mb-6 px-2">A calm space in a loud world.</h3>
+                                <p class="text-gray-500 italic text-sm px-2">Twilight Rest feels like a soft pause button for my mind. I look forward to every single session and sleep so much better now.</p>
+                            </div>
+                            <div class="flex items-center justify-end gap-2 mt-4">
+                                <span class="font-bold text-gray-700">- John D. , USA</span>
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="USA"
+                                    class="w-8 h-8 rounded-full border border-orange-900 border-2 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flexible-plans  py-20 w-full bg-[#eeeaea]">
             <div class="max-w-[1500px] px-6 md:px-12 mx-auto flex flex-col items-center justify-center">
                 <h2 class="text-4xl font-semibold  text-center mb-6">Flexible plans for everyone.</h2>
                 <p class="text-center text-gray-600 mb-20 max-w-[400px]">Start for free. Upgrade only when you are ready
                     to unlock your full potential.</p>
 
                 <div class="flex flex-col md:flex-row gap-10  items-center justify-center">
-                    <div class="p-10 rounded-xl h-[500px] shadow-[8px_8px_24px_-8px_rgba(0,0,0,0.10),-8px_8px_24px_-8px_rgba(0,0,0,0.10),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:-translate-y-5 transition-transform duration-300"
-                        style="background-color: #f6f3f3;">
+                    <div
+                        class=" bg-[#f6f3f3] p-5 md:p-10 rounded-xl h-fit md:h-fit shadow-[8px_8px_24px_-8px_rgba(0,0,0,0.10),-8px_8px_24px_-8px_rgba(0,0,0,0.10),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:-translate-y-5 transition-transform duration-300">
                         <div class="mb-10"><span class="text-4xl font-semibold pr-2">$0</span><span
                                 class="text-gray-500">/ month</span></div>
                         <h3 class="text-3xl font-bold mb-5">Free</h3>
@@ -318,10 +395,10 @@
                                 progress tracking</li>
                         </ul>
                         <button
-                            class="rounded-lg cursor-pointer text-center w-full border-3 p-2 border-orange-900 text-orange-900"
-                            style="background-color: #eeeaea;">Get Started</button>
+                            class="bg-[#eeeaea] rounded-lg cursor-pointer text-center w-full border-3 p-2 border-orange-900 text-orange-900">Get
+                            Started</button>
                     </div>
-                    <div class="p-10 rounded-xl h-[500px] shadow-[8px_8px_24px_-8px_rgba(0,0,0,0.10),-8px_8px_24px_-8px_rgba(0,0,0,0.10),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:-translate-y-5 transition-transform duration-300"
+                    <div class=" bg-[#f6f3f3] p-5 md:p-10 rounded-xl h-fit md:h-fit shadow-[8px_8px_24px_-8px_rgba(0,0,0,0.10),-8px_8px_24px_-8px_rgba(0,0,0,0.10),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:-translate-y-5 transition-transform duration-300"
                         style="background: linear-gradient(180deg, #b97a5a 0%, #7e2a0c 100%);">
                         <div class="mb-10"><span class="text-4xl font-semibold pr-2 text-white">$15</span><span
                                 class="text-gray-200">/ month</span></div>
@@ -342,8 +419,8 @@
                             class="text-center cursor-pointer w-full border-3 p-2 border-orange-900 text-orange-900 bg-white rounded-lg transition-colors duration-300">Get
                             Started</button>
                     </div>
-                    <div class="p-10 rounded-xl h-[500px] shadow-[8px_8px_24px_-8px_rgba(0,0,0,0.10),-8px_8px_24px_-8px_rgba(0,0,0,0.10),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:-translate-y-5 transition-transform duration-300"
-                        style="background-color: #f6f3f3;">
+                    <div
+                        class=" bg-[#f6f3f3] p-5 md:p-10 rounded-xl h-fit md:h-fit shadow-[8px_8px_24px_-8px_rgba(0,0,0,0.10),-8px_8px_24px_-8px_rgba(0,0,0,0.10),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:-translate-y-5 transition-transform duration-300">
                         <div class="mb-10"><span class="text-4xl font-semibold pr-2">$10</span><span
                                 class="text-gray-500">/ month</span></div>
                         <h3 class="text-3xl font-bold mb-5">Pro</h3>
@@ -362,8 +439,8 @@
                                     name="checkmark-outline"></ion-icon>Customized Reminders</li>
                         </ul>
                         <button
-                            class=" cursor-pointer rounded-lg text-center w-full border-3 p-2 border-orange-900 text-orange-900"
-                            style="background-color: #eeeaea;">Get Started</button>
+                            class=" bg-[#eeeaea] cursor-pointer rounded-lg text-center w-full border-3 p-2 border-orange-900 text-orange-900">Get
+                            Started</button>
                     </div>
                 </div>
 
@@ -387,13 +464,14 @@
             </div>
         </section>
     </main>
-    <footer class="py-6 flex items-center justify-center" style="background-color: #eeeaea;">
+    <footer class="py-6 flex items-center justify-center bg-[#eeeaea]">
         <div class="max-w-[1500px] grid grid-cols-2 p-6 md:p-12 gap-4 md:grid-cols-4">
             <div class="flex items-start justify-start gap-2 mb-4">
-                <h2 class="text-orange-900 font-bold text-2xl" style="font-family: 'Poiret One', cursive;">Twiglight
+                <h2 class="text-orange-900 font-bold text-lg md:text-2xl" style="font-family: 'Poiret One', cursive;">
+                    Twiglight
                     Rest</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                    fill="#7e2a0c">
+                <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
+                    width="32px" fill="#7e2a0c">
                     <path
                         d="M261-160q-26 0-43-17t-17-43q0-18 9-34.5t26-23.5l172-68v-138q-66 81-134 122t-154 41v-60q68 0 124-31.5T345-501l58-65q10-12 23.5-20t29.5-8h48q16 0 30 8t24 20l58 65q48 55 102 87.5T840-381v60q-85 0-153.5-41T552-484v138l172 68q17 7 26 23.5t9 34.5q0 26-17 43t-43 17H396v-11q0-26 16-42t42-16h133q8 0 14-6t6-14q0-8-6-14t-14-6H454q-44 0-70 27t-26 71v11h-97Zm219-494q-30 0-51.5-21.5T407-727q0-30 21.5-51.5T480-800q30 0 51.5 21.5T553-727q0 30-21.5 51.5T480-654Z" />
                 </svg>
@@ -419,8 +497,7 @@
                 <h3 class="font-semibold mb-3">Stay Connected</h3>
                 <p class="text-gray-600 w-5/7 mb-5">Get mindfulness tips and updates delivered to your mailbox.</p>
                 <div class="mb-5 flex items-center">
-                    <input type="text" placeholder="Enter your email" class="py-2 px-3 rounded-l-md w-48"
-                        style="background-color: #f6f3f3;">
+                    <input type="text" placeholder="Email" class="py-2 px-3 rounded-l-md w-full md:w-48 bg-[#f6f3f3]">
                     <ion-icon name="mail-outline" class="text-white bg-orange-900 p-3 rounded-r-md"></ion-icon>
                 </div>
                 <div>
