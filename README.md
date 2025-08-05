@@ -13,7 +13,7 @@ A beautiful meditation and mindfulness web application built with HTML, Tailwind
 
 ## Live Demo
 
-[View Live Site](your-render-url-here)
+[View Live Site](https://twilight-rest-clone-david.netlify.app/)
 
 ## Local Development
 
@@ -38,4 +38,4 @@ npm run build
 
 ## License
 
-MIT License
+Davdi Dickson's License
