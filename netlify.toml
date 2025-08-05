@@ -1,0 +1,30 @@
+[build]
+  # Build command
+  command = "npm run build"
+  
+  # Directory to publish (where your built files are)
+  publish = "."
+  
+  # Install npm dependencies
+  environment = { NODE_VERSION = "18" }
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+# Redirect rules for SPA (if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  condition = "Not from /api/*"
